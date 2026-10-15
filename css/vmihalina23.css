@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+header {
+	background-color: #f5ebd8;
+	padding: 15px 20px;
+}
+
+.zaglavlje-kontejner {
+	width: 100%;
+}
+
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.logo a img {
+	border: none;
+}
+
+.logo img {
+	width: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 28px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.navigacija {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70%;
+	text-align: right;
+}
+
+.navigacija ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigacija li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.navigacija a {
+	display: block;
+	padding: 6px 8px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.navigacija a:hover {
+	color: blue;
+}
+
+main {
+	width: 100%;
+	padding: 20px;
+	flex: 1;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: #f5ebd8;
+	text-align: center;
+	padding: 15px 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.logo {
+		display: block;
+		width: 100%;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	.navigacija {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+
+	.navigacija li {
+		display: block;
+		margin-left: 0;
+	}
+
+	.navigacija a {
+		padding: 10px 0;
+	}
+}

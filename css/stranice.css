@@ -1,0 +1,204 @@
+.uvodna-sekcija {
+	width: 100%;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+}
+
+.uvodna-sekcija h2 {
+	margin-top: 0;
+	text-align: center;
+}
+
+.uvodna-sekcija p {
+	text-align: center;
+}
+
+.slikagrada {
+	display: block;
+	margin: auto;
+}
+
+.blokovi-pocetna {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.sadrzajna-sekcija {
+	border: 1px solid lightgray;
+	padding: 10px;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.blokovi-pocetna h2 {
+	text-align: center;
+}
+
+
+.sadrzajna-sekcija a {
+	display: block;
+	text-align: center;
+}
+
+.prijava-sekcija {
+	width: 100%;
+	border-top: 1px solid lightgray;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.sadrzajna-sekcija a,
+.prijava-sekcija a,
+.uvodna-sekcija a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.sadrzajna-sekcija a:hover,
+.prijava-sekcija a:hover,
+.uvodna-sekcija a:hover {
+	color: blue;
+}
+
+.ogradu h1 {
+	text-align: center;
+}
+
+.mapa {
+	width: 100%;
+}
+
+.lokacije-stranica h1 {
+	text-align: center;
+}
+
+.grid-lokacije {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.lokacija {
+	border: 1px solid lightgray;
+	padding: 10px;
+}
+
+.slika-lokacije {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.lokacija p {
+	line-height: 1.5;
+}
+
+.manifestacije h1 {
+	text-align: center;
+}
+
+.godisnje-doba {
+	margin-bottom: 20px;
+}
+
+.red-manifestacije img {
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+}
+
+.red-manifestacije p {
+	display: inline-block;
+	width: 60%;
+	margin-left: 20px;
+	vertical-align: top;
+	line-height: 1.5;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	font-size: 12px;
+}
+
+th,
+td {
+	border: 1px solid black;
+	padding: 4px;
+	word-break: break-word;
+}
+
+th {
+	background-color: #f5ebd8;
+}
+
+.greska {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.polje-greska {
+    border: 2px solid red;
+}
+
+.aktivna-poveznica {
+    color: blue;
+    text-decoration: underline;
+}
+
+#gumbIzbornik {
+    margin: 10px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#pretragaSporta,
+#filterSporta {
+    margin: 10px 10px 15px 0;
+    padding: 6px;
+}
+
+@media screen and (max-width: 768px) {
+	.blokovi-pocetna {
+	grid-template-columns: 1fr;
+}
+
+.sadrzajna-sekcija {
+	width: 100%;
+}
+
+	.grid-lokacije {
+		grid-template-columns: 1fr;
+	}
+
+	.red-manifestacije img,
+	.red-manifestacije p {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.red-manifestacije img {
+		margin-bottom: 10px;
+	}
+	 #gumbIzbornik {
+        display: block;
+        margin: 10px 0;
+        padding: 8px 12px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid black;
+    }
+}

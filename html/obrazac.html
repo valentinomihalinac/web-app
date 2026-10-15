@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prijava</title>
+	<meta name="description" content="Prijava za obavljanje ugostiteljskih usluga">
+	<meta name="author" content="Valentino Mihalinac">
+	<link rel="stylesheet" href="/dizajn/vmihalina23.css">
+	<link rel="stylesheet" href="/dizajn/stranice.css">
+	<script src="/JSklijent/vmihalina23.js"></script>
+	<script src="/JSklijent/vmihalina23_obrazac.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="zaglavlje-kontejner">
+			<div class="logo">
+				<a href="/index">
+					<img src="/resursi/slike/grb.png" alt="Grb grada Garešnice">
+				</a>
+				<span>Grad Garešnica</span>
+			</div>
+
+			<nav class="navigacija">
+	<ul>
+		<li><a href="/index">Početna</a></li>
+		<li><a href="/o_gradu">O gradu</a></li>
+		<li><a href="/lokacije">Što vidjeti</a></li>
+		<li><a href="/manifestacije">Događanja</a></li>
+		<li><a href="/sport_i_rekreacija">Sport i rekreacija</a></li>
+		<li><a href="/obrValidacija">Prijava</a></li>
+		<li><a href="/pregled">Pregled</a></li>
+		<li><a href="/api/zapisi">API zapisi</a></li>
+		<li><a href="/dokumentacija">Dokumentacija</a></li>
+	</ul>
+</nav>
+		</div>
+	</header>
+
+	<main class="obrazac">
+
+		<h1>Prijava za obavljanje ugostiteljskih usluga - Gariglazbijada 2026</h1>
+		<form id="obrazacPrijave" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="POST" novalidate>
+
+			<h2>Podaci o prijavitelju</h2>
+			<label for="naziv">Naziv obrta / tvrtke:</label><br>
+			<input type="text" id="naziv" name="naziv" required><br><br>
+			<label for="ime">Ime i prezime odgovorne osobe:</label><br>
+			<input type="text" id="ime" name="ime" required><br><br>
+			<label for="adresa">Adresa:</label><br>
+			<input type="text" id="adresa" name="adresa" required><br><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
+			<label for="telefon">Kontakt telefon:</label><br>
+			<input type="tel" id="telefon" name="telefon" required><br><br>
+
+
+			<h2>Vrsta ugostiteljske ponude</h2>
+			<input type="checkbox" id="hrana" name="ponuda" value="hrana">
+			<label for="hrana">Hrana</label><br>
+			<input type="checkbox" id="pice" name="ponuda" value="pice">
+			<label for="pice">Piće</label><br>
+			<input type="checkbox" id="slastice" name="ponuda" value="slastice">
+			<label for="slastice">Slastice</label><br><br>
+
+			<h2>Način posluživanja</h2>
+			<input type="radio" id="stand" name="nacin" value="stand">
+			<label for="stand">Štand</label><br>
+			<input type="radio" id="kucica" name="nacin" value="kucica">
+			<label for="kucica">Kućica</label><br><br>
+
+			<h2>Sudjelovanje</h2>
+			<label for="datum">Datum dolaska:</label><br>
+			<input type="date" id="datum" name="datum"><br><br>
+			<label for="dani">Broj dana sudjelovanja:</label><br>
+			<input type="number" id="dani" name="dani" min="1" max="5"><br><br>
+
+			<h2>Dodatne napomene</h2>
+			<textarea id="napomena" name="napomena" rows="4" cols="40"></textarea><br><br>
+
+			<input type="submit" value="Pošalji prijavu">
+			<input type="reset" value="Poništi">
+
+		</form>
+
+	</main>
+
+	<footer>
+	<a href="https://validator.w3.org/check?uri=http://spider.foi.hr:12354/obrValidacija"
+		target="_blank">
+		<img src="/resursi/slike/HTML5.png" alt="HTML5" width="88" height="31">
+	</a>
+	<p>&copy; Valentino Mihalinac</p>
+</footer>
+
+</body>
+
+</html>

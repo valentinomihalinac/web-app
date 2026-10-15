@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dokumentacija</title>
+	<meta name="description" content="Web aplikacija o gradu Garešnici">
+	<meta name="author" content="Valentino Mihalinac">
+	<link rel="stylesheet" href="/dizajn/vmihalina23.css">
+	<link rel="stylesheet" href="/dizajn/stranice.css">
+	<script src="/JSklijent/vmihalina23.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="zaglavlje-kontejner">
+			<div class="logo">
+				<a href="/index">
+					<img src="/resursi/slike/grb.png" alt="Grb grada Garešnice">
+				</a>
+				<span>Grad Garešnica</span>
+			</div>
+		<nav class="navigacija">
+	<ul>
+		<li><a href="/index">Početna</a></li>
+		<li><a href="/o_gradu">O gradu</a></li>
+		<li><a href="/lokacije">Što vidjeti</a></li>
+		<li><a href="/manifestacije">Događanja</a></li>
+		<li><a href="/sport_i_rekreacija">Sport i rekreacija</a></li>
+		<li><a href="/obrValidacija">Prijava</a></li>
+		<li><a href="/pregled">Pregled</a></li>
+		<li><a href="/api/zapisi">API zapisi</a></li>
+		<li><a href="/dokumentacija">Dokumentacija</a></li>
+	</ul>
+</nav>
+		</div>
+	</header>
+	<main class="container mt-4">
+		<h1>Dokumentacija</h1>
+		<h2>Autor</h2>
+<img src="/resursi/slike/vmihalina23.jpg" width="250" height="250" alt="Autor">
+
+<table class="table table-bordered table-striped mt-3">
+	<thead>
+		<tr>
+			<th>Ime i prezime</th>
+			<th>Godina</th>
+			<th>Mjesto</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Valentino Mihalinac</td>
+			<td>2</td>
+			<td>Garešnica</td>
+			<td><a href="mailto:vmihalina23@student.foi.hr">vmihalina23@student.foi.hr</a></td>
+		</tr>
+	</tbody>
+</table>
+
+		<h3>Stranice</h3>
+		<ul>
+			<li><a href="/index">Početna</a></li>
+			<li><a href="/o_gradu">O gradu</a></li>
+			<li><a href="/lokacije">Što vidjeti</a></li>
+			<li><a href="/manifestacije">Događanja</a></li>
+			<li><a href="/sport_i_rekreacija">Sport i rekreacija</a></li>
+			<li><a href="/obrValidacija">Prijava</a></li>
+			<li><a href="/dokumentacija">Dokumentacija</a></li>
+			<li><a href="/pregled">Pregled zapisa</a></li>
+		</ul>
+
+<h3>Tablica 1. JavaScript klijent</h3>
+
+<table class="table table-bordered table-striped mt-3">
+	<thead>
+		<tr>
+			<th>Stavka</th>
+			<th>Status</th>
+			<th>Napomena</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1. Vanjske datoteke</td>
+			<td>Napravljeno</td>
+			<td>Postoje datoteke vmihalina23.js i vmihalina23_obrazac.js.</td>
+		</tr>
+		<tr>
+			<td>2. Validacija obrasca</td>
+			<td>Napravljeno</td>
+			<td>Implementirano više pravila validacije; uključene su provjere obaveznih polja, oblika unosa i odnosa između polja.</td>
+		</tr>
+		<tr>
+			<td>3. Interaktivnost - navigacijski izbornik</td>
+			<td>Napravljeno</td>
+			<td>Promjena prikaza izbornika i označavanje aktivne poveznice.</td>
+		</tr>
+		<tr>
+			<td>4. Interaktivnost - tablica</td>
+			<td>Napravljeno</td>
+			<td>Pretraživanje i filtriranje tablice sportskih udruga bez ponovnog učitavanja stranice.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Tablica 2. Poslužiteljska strana</h3>
+
+<table class="table table-bordered table-striped mt-3">
+	<thead>
+		<tr>
+			<th>Stavka</th>
+			<th>Status</th>
+			<th>Napomena</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1. Port za NodeJS poslužitelj</td>
+			<td>Napravljeno</td>
+			<td>Vlastiti NodeJS poslužitelj pokrenut na dodijeljenom portu.</td>
+		</tr>
+		<tr>
+			<td>2. Posluživanje HTML stranica</td>
+			<td>Napravljeno</td>
+			<td>Svaka HTML stranica poslužena zasebno; korijenska putanja preusmjerava na početnu stranicu.</td>
+		</tr>
+		<tr>
+			<td>3. Posluživanje direktorija</td>
+			<td>Napravljeno</td>
+			<td>Putanje /JSklijent, /dizajn i /resursi ispravno rade.</td>
+		</tr>
+		<tr>
+			<td>4. JavaScript datoteke na poslužiteljskoj strani</td>
+			<td>Napravljeno</td>
+			<td>Serverske JavaScript datoteke imaju ekstenziju .cjs.</td>
+		</tr>
+		<tr>
+			<td>5. Nepostojeće putanje</td>
+			<td>Napravljeno</td>
+			<td>Vraća 404 i poruku "Stranica ne postoji!" s poveznicom na početnu stranicu.</td>
+		</tr>
+		<tr>
+			<td>6. Dinamička stranica /pregled</td>
+			<td>Napravljeno</td>
+			<td>Prikaz, pretraživanje, filtriranje i brisanje zapisa iz zapisi.csv.</td>
+		</tr>
+		<tr>
+			<td>7. Dinamička stranica /pregled/{id}</td>
+			<td>Napravljeno</td>
+			<td>Prikaz pojedinačnog zapisa ili poruka ako zapis ne postoji.</td>
+		</tr>
+		<tr>
+	         <td>8. REST servis /api/zapisi</td>
+	         <td>Napravljeno</td>
+	         <td>GET i POST rade; PUT i DELETE za kolekciju vraćaju 405.</td>
+        </tr>
+<tr>
+	<td>9. REST servis /api/zapisi/{id}</td>
+	<td>Napravljeno</td>
+	<td>GET, PUT i DELETE rade; POST za pojedinačni zapis vraća 405.</td>
+</tr>
+<tr>
+	<td>10. Vlastiti modul</td>
+	<td>Napravljeno</td>
+	<td>Implementirane su funkcije dohvatiSve, dohvatiPoIdentifikatoru, dodajNovi, azurirajPostojeci i ukloniPoIdentifikatoru.</td>
+</tr>
+<tr>
+	<td>11. Poruke grešaka</td>
+	<td>Napravljeno</td>
+	<td>REST greške vraćaju atribut "greska" u JSON odgovoru.</td>
+</tr>
+	</tbody>
+</table>
+
+		<h4>CSS datoteke</h4>
+		<ul>
+			<li>
+				vmihalina23.css
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http://spider.foi.hr:12354/dizajn/vmihalina23.css"
+					target="_blank">
+					<img src="/resursi/slike/CSS3.png" alt="CSS validator" width="88" height="31">
+				</a>
+			</li>
+			<li>
+				stranice.css
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=http://spider.foi.hr:12354/dizajn/stranice.css"
+					target="_blank">
+					<img src="/resursi/slike/CSS3.png" alt="CSS validator" width="88" height="31">
+				</a>
+			</li>
+		</ul>
+
+		<h2 class="mt-4">Wireframe skice</h2>
+
+		<div class="row">
+			<div class="col-md-6 mb-4">
+				<h3>Početna</h3>
+				<a href="/index">
+					<img src="/resursi/slike/index.jpeg" alt="Wireframe početne stranice" class="img-fluid border">
+				</a>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h3>O gradu</h3>
+				<a href="/o_gradu">
+					<img src="/resursi/slike/ogradu.jpeg" alt="Wireframe stranice o gradu" class="img-fluid border">
+				</a>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h3>Što vidjeti</h3>
+				<a href="/lokacije">
+					<img src="/resursi/slike/lokacije.jpeg" alt="Wireframe stranice lokacije" class="img-fluid border">
+				</a>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h3>Događanja</h3>
+				<a href="/manifestacije">
+					<img src="/resursi/slike/manifestacije.jpeg" alt="Wireframe stranice događanja" class="img-fluid border">
+				</a>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h3>Sport i rekreacija</h3>
+				<a href="/sport_i_rekreacija">
+					<img src="/resursi/slike/sport.jpeg" alt="Wireframe stranice sport i rekreacija" class="img-fluid border">
+				</a>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h3>Obrazac</h3>
+				<a href="/obrValidacija">
+					<img src="/resursi/slike/obrazac.jpeg" alt="Wireframe stranice obrazac" class="img-fluid border">
+				</a>
+			</div>
+
+			<div class="col-md-6 mb-4">
+				<h3>Dokumentacija</h3>
+				<a href="/dokumentacija">
+					<img src="/resursi/slike/dokumentacija.jpeg" alt="Wireframe stranice dokumentacija"
+						class="img-fluid border">
+				</a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<a href="https://validator.w3.org/check?uri=http://spider.foi.hr:12354/dokumentacija"
+			target="_blank">
+			<img src="/resursi/slike/HTML5.png" alt="HTML5" width="88" height="31">
+		</a>
+		<p>&copy; Valentino Mihalinac</p>
+	</footer>
+</body>
+
+</html>
